@@ -6,6 +6,7 @@ namespace AdapterPattern
         private static void Main()
         {
             var turkey = new WildTurkey();
+            // convert Turkey to a duck
             var adapter = new TurkeyAdapter(turkey);
 
             Tester(adapter);
