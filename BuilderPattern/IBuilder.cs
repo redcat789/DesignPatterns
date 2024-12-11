@@ -2,10 +2,12 @@
 {
     public interface IBuilder
     {
-        void AddIngredients();
-        void AddShape();
-        void AddSize();
-        void Reset();
-        Hamburger Build();
+        void SetName();
+        void SetAge();
+        void SetGender();
+        void SetCircumference();
+        void SetWeight();
+        void SetHeight();
+        Person Build();
     }
 }

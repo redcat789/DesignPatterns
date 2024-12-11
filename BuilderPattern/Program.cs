@@ -4,17 +4,22 @@ namespace BuilderPattern
 {
     class Program
     {
+        /**
+         * The Builder pattern suggests that you extract the object construction code out 
+         * of its own class and move it to separate objects called builders.
+         */
         static void Main()
         {
-            var builder = new MyHamburgerBuilder();
-            var cook = new Cook(builder);
-            var myHamburger = cook.Build();
+            var womanBuilder = new WomanBuilder();
+            var personMaker = new Make(womanBuilder);
+            var woman = personMaker.Build();
 
-            cook.ChangeBuilder(new WifesHamburgerBuilder());
-            var wifesHamburger = cook.Build();
+            personMaker.ChangeBuilder(new ManBuilder());
+            var man = personMaker.Build();
 
-            Console.WriteLine($"My Hamburger: {myHamburger}");
-            Console.WriteLine($"My Wife's Hamburger: {wifesHamburger}");
+            Console.WriteLine($"I made a woman: {woman}");
+            Console.WriteLine("------------------------------");
+            Console.WriteLine($"I made a man: {man}");
         }
     }
 }
