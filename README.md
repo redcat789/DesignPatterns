@@ -39,3 +39,6 @@ There are three kinds of Design Patterns:
 * [Strategy](/StrategyPattern)
 * [Template](/TemplatePattern)
 * [Visitor](/VisitorPattern)
+
+## Reference
+https://refactoring.guru/design-patterns/builder
