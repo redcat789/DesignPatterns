@@ -4,21 +4,21 @@ namespace DecoratorPattern
 {
     static class Program
     {
+        /*
+         * Decorator is a structural design pattern that lets you attach new behaviors 
+         * to objects by placing these objects inside special wrapper objects that 
+         * contain the behaviors.
+         */
         static void Main()
         {
-            Beverage beverage = new Espresso();
-            Console.WriteLine(beverage.Description + " $" + beverage.Cost());
+            ICoffee myCoffee = new SimpleCoffee();
+            Console.WriteLine($"{myCoffee.GetDescription()} costs {myCoffee.GetCost()}");
 
-            Beverage beverage2 = new DarkRoast();
-            beverage2 = new MochaCondiment(beverage2);
-            beverage2 = new MochaCondiment(beverage2);
-            beverage2 = new WhipCondiment(beverage2);
-            Console.WriteLine(beverage2.Description + " $" + beverage2.Cost());
+            myCoffee = new MilkDecorator(myCoffee);
+            Console.WriteLine($"{myCoffee.GetDescription()} costs {myCoffee.GetCost()}");
 
-            Beverage beverage3 = new HouseBlend();
-            beverage3 = new MochaCondiment(beverage3);
-            beverage3 = new WhipCondiment(beverage3);
-            Console.WriteLine(beverage3.Description + " $" + beverage3.Cost());
+            myCoffee = new SugarDecorator(myCoffee);
+            Console.WriteLine($"{myCoffee.GetDescription()} costs {myCoffee.GetCost()}");
         }
     }
 }
