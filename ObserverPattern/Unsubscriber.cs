@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace ObserverPattern
 {
-    internal class Unsubscriber<TWeather> : IDisposable
+    internal class Unsubscriber<T> : IDisposable
     {
-        private readonly List<IObserver<TWeather>> _observers;
-        private readonly IObserver<TWeather> _observer;
+        private readonly List<IObserver<T>> _observers;
+        private readonly IObserver<T> _observer;
 
-        internal Unsubscriber(List<IObserver<TWeather>> observers, IObserver<TWeather> observer)
+        internal Unsubscriber(List<IObserver<T>> observers, IObserver<T> observer)
         {
             _observers = observers;
             _observer = observer;
