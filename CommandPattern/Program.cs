@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CommandPattern.Commands;
+using CommandPattern.Receivers;
+using System;
 
 namespace CommandPattern
 {
@@ -13,49 +15,31 @@ namespace CommandPattern
         */
         private static void Main()
         {
-            var remote = new RemoteControl(3);
+            TV tv = new TV();
+            Fan fan = new Fan();
 
+            ICommand tvOn = new TVOnCommand(tv);
+            ICommand tvOff = new TVOffCommand(tv);
+            ICommand fanOn = new FanOnCommand(fan);
+            ICommand fanOff = new FanOffCommand(fan);
 
-            var bike = new Garage("Bike");
-            var bikeDoorClose = new GarageDoorCloseCommand(bike);
-            var bikeDoorOpen = new GarageDoorOpenCommand(bike);
+            RemoteControl remote = new RemoteControl();
 
-            var car = new Garage("Car");
-            var carDoorClose = new GarageDoorCloseCommand(car);
-            var carDoorOpen = new GarageDoorOpenCommand(car);
+            // Turn on the TV
+            remote.SetCommand(tvOn);
+            remote.PressButton();
 
-            var garageButton = new OnOffStruct
-            {
-                On = bikeDoorOpen,
-                Off = bikeDoorClose
-            };
+            // Turn off the TV
+            remote.SetCommand(tvOff);
+            remote.PressButton();
 
-            remote[0] = garageButton;
-            remote.PushOn(0);
-            remote.PushUndo();
-            remote.PushUndo();
-            remote.PushOff(0);
+            // Turn on the Fan
+            remote.SetCommand(fanOn);
+            remote.PressButton();
 
-
-            Console.WriteLine();
-            var light = new Light("Hall");
-
-            ICommand[] partyOn = { new LightOffCommand(light), bikeDoorOpen, carDoorOpen };
-            ICommand[] partyOff = { new LightOnCommand(light), bikeDoorClose, carDoorClose };
-
-
-            remote[2] = new OnOffStruct { On = new MacroCommand(partyOn), Off = new MacroCommand(partyOff) };
-
-            try
-            {
-                remote.PushOn(2);
-                Console.WriteLine();
-                remote.PushOff(2);
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("Oops");
-            }
+            // Turn off the Fan
+            remote.SetCommand(fanOff);
+            remote.PressButton();
         }
     }
 }
