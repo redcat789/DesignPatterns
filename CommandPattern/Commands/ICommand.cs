@@ -10,5 +10,4 @@ namespace CommandPattern.Commands
     {
         void Execute();
     }
-
 }
