@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Memento
+namespace MementoPattern
 {
     //The Caretaker manages the saved states (Mementos).
     public class SaveManager

@@ -1,13 +1,13 @@
-﻿using SimpleFactory.Shapes;
+﻿using SimpleFactoryPattern.Shapes;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Rectangle = SimpleFactory.Shapes.Rectangle;
+using Rectangle = SimpleFactoryPattern.Shapes.Rectangle;
 
-namespace SimpleFactory
+namespace SimpleFactoryPattern
 {
     public class ShapeFactory
     {

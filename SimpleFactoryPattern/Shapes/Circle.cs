@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleFactory.Shapes
+namespace SimpleFactoryPattern.Shapes
 {
     public class Circle : Shape
     {

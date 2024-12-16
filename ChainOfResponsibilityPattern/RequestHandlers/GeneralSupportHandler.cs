@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ChainOfResponsibility.RequestHandlers;
 
-namespace ChainOfResponsibility
+namespace ChainOfResponsibilityPattern.RequestHandlers
 {
-    public class TechnicalSupportHandler : HelpDeskHandler
+    public class GeneralSupportHandler : HelpDeskHandler
     {
+        //Each handler specializes in handling a specific type of issue.
         public override void HandleRequest(string issue)
         {
-            if (issue.Contains("technical"))
+            if (issue.Contains("general"))
             {
-                Console.WriteLine("Technical Support: Handling the request.");
+                Console.WriteLine("General Support: Handling the request.");
             }
             else
             {

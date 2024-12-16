@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Memento
+namespace MementoPattern
 {
     //The Originator is the Player. It creates and restores its state from the GameState (Memento).
     public class Player

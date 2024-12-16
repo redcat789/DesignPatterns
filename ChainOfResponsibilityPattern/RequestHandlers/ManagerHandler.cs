@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChainOfResponsibility.RequestHandlers
+namespace ChainOfResponsibilityPattern.RequestHandlers
 {
     public class ManagerHandler : HelpDeskHandler
     {

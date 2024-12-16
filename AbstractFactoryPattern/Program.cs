@@ -1,4 +1,4 @@
-﻿namespace AbstractFactory
+﻿namespace AbstractFactoryPattern
 {
     internal class Program
     {

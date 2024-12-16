@@ -1,4 +1,4 @@
-﻿namespace Memento
+﻿namespace MementoPattern
 {
     internal class Program
     {

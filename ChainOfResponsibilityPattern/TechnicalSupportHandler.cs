@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ChainOfResponsibilityPattern.RequestHandlers;
 
-namespace ChainOfResponsibility.RequestHandlers
+namespace ChainOfResponsibilityPattern
 {
-    public class BillingSupportHandler : HelpDeskHandler
+    public class TechnicalSupportHandler : HelpDeskHandler
     {
         public override void HandleRequest(string issue)
         {
-            if (issue.Contains("billing"))
+            if (issue.Contains("technical"))
             {
-                Console.WriteLine("Billing Support: Handling the request.");
+                Console.WriteLine("Technical Support: Handling the request.");
             }
             else
             {

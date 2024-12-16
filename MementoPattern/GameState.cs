@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Memento
+namespace MementoPattern
 {
     //The Memento stores the state of the player.
     public class GameState

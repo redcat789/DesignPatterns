@@ -4,16 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChainOfResponsibility.RequestHandlers
+namespace ChainOfResponsibilityPattern.RequestHandlers
 {
-    public class GeneralSupportHandler : HelpDeskHandler
+    public class BillingSupportHandler : HelpDeskHandler
     {
-        //Each handler specializes in handling a specific type of issue.
         public override void HandleRequest(string issue)
         {
-            if (issue.Contains("general"))
+            if (issue.Contains("billing"))
             {
-                Console.WriteLine("General Support: Handling the request.");
+                Console.WriteLine("Billing Support: Handling the request.");
             }
             else
             {

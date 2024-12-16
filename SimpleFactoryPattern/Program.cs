@@ -1,6 +1,6 @@
-﻿using SimpleFactory.Shapes;
+﻿using SimpleFactoryPattern.Shapes;
 
-namespace SimpleFactory
+namespace SimpleFactoryPattern
 {
     internal class Program
     {
