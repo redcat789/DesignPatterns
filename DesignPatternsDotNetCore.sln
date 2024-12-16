@@ -42,6 +42,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonPattern.Tests", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitorPattern", "VisitorPattern\VisitorPattern.csproj", "{B50ECA51-7703-496B-A7FB-BD44A99F1379}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento", "Memento\Memento.csproj", "{5806A8AB-B0A7-492C-BB93-1D5A7B618CBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -292,6 +294,18 @@ Global
 		{B50ECA51-7703-496B-A7FB-BD44A99F1379}.Release|x64.Build.0 = Release|Any CPU
 		{B50ECA51-7703-496B-A7FB-BD44A99F1379}.Release|x86.ActiveCfg = Release|Any CPU
 		{B50ECA51-7703-496B-A7FB-BD44A99F1379}.Release|x86.Build.0 = Release|Any CPU
+		{5806A8AB-B0A7-492C-BB93-1D5A7B618CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5806A8AB-B0A7-492C-BB93-1D5A7B618CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5806A8AB-B0A7-492C-BB93-1D5A7B618CBC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5806A8AB-B0A7-492C-BB93-1D5A7B618CBC}.Debug|x64.Build.0 = Debug|Any CPU
+		{5806A8AB-B0A7-492C-BB93-1D5A7B618CBC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5806A8AB-B0A7-492C-BB93-1D5A7B618CBC}.Debug|x86.Build.0 = Debug|Any CPU
+		{5806A8AB-B0A7-492C-BB93-1D5A7B618CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5806A8AB-B0A7-492C-BB93-1D5A7B618CBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5806A8AB-B0A7-492C-BB93-1D5A7B618CBC}.Release|x64.ActiveCfg = Release|Any CPU
+		{5806A8AB-B0A7-492C-BB93-1D5A7B618CBC}.Release|x64.Build.0 = Release|Any CPU
+		{5806A8AB-B0A7-492C-BB93-1D5A7B618CBC}.Release|x86.ActiveCfg = Release|Any CPU
+		{5806A8AB-B0A7-492C-BB93-1D5A7B618CBC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
