@@ -1,4 +1,6 @@
-﻿namespace BuilderPattern
+﻿using BuilderPattern.Builder;
+
+namespace BuilderPattern
 {
 
     // This class can also be called the Director

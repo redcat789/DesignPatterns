@@ -1,11 +1,11 @@
-﻿namespace BuilderPattern
+﻿namespace BuilderPattern.Builder
 {
     public class WomanBuilder : IBuilder
     {
         private Person _woman;
         public WomanBuilder()
         {
-            _woman= new Person();
+            _woman = new Person();
         }
         public void SetName()
         {
@@ -13,7 +13,7 @@
         }
         public void SetGender()
         {
-            _woman.Gender=0;
+            _woman.Gender = 0;
         }
         public void SetAge()
         {
@@ -22,7 +22,7 @@
 
         public void SetCircumference()
         {
-            _woman.BustMeasurement = 87; 
+            _woman.BustMeasurement = 87;
         }
 
         public void SetWeight()
@@ -37,6 +37,6 @@
         public Person Build()
         {
             return _woman;
-        }        
+        }
     }
 }
