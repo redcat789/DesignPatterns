@@ -1,6 +1,6 @@
 using System;
 
-namespace BridgePattern
+namespace BridgePattern.Devices
 {
     public class TV : IDevice
     {

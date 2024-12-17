@@ -1,6 +1,7 @@
 using System;
+using BridgePattern.Devices;
 
-namespace BridgePattern
+namespace BridgePattern.Remotes
 {
     public class RemoteTypeA : IRemote
     {

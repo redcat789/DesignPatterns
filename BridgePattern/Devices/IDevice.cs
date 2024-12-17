@@ -1,4 +1,4 @@
-namespace BridgePattern
+namespace BridgePattern.Devices
 {
     public interface IDevice
     {

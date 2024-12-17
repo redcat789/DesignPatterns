@@ -1,4 +1,6 @@
-namespace BridgePattern
+using BridgePattern.Devices;
+
+namespace BridgePattern.Remotes
 {
     public interface IRemote
     {

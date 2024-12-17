@@ -1,4 +1,7 @@
-﻿namespace BridgePattern
+﻿using BridgePattern.Devices;
+using BridgePattern.Remotes;
+
+namespace BridgePattern
 {
     internal static class Program
     {
